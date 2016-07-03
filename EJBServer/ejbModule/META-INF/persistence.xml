@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+						                       http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+	<persistence-unit name="ejbProject" transaction-type="JTA">
+
+		<jta-data-source>java:/Test</jta-data-source>
+
+		<class>com.mooc.domain.Chapter</class>
+		<class>com.mooc.domain.Course</class>
+		<class>com.mooc.domain.Trainer</class>
+		<class>com.mooc.domain.User</class>
+		<class>com.mooc.domain.Authorization</class>
+		<class>com.mooc.domain.Admin</class>
+		<class>com.mooc.domain.Learner</class>
+		<class>com.mooc.domain.Session</class>
+		<class>com.mooc.domain.Comment</class>
+		<class>com.mooc.domain.Quiz</class>
+		<class>com.mooc.domain.Exam</class>
+		<class>com.mooc.domain.Category</class>
+		<class>com.mooc.domain.Validation</class>
+		<class>com.mooc.domain.Notification</class>
+		<class>com.mooc.domain.IndividualCM</class>
+		<class>com.mooc.domain.ComitteeMember</class>
+		<class>com.mooc.domain.University</class>
+
+		<properties>
+			<property name="javax.persistence.schema-generation.database.action"
+				value="drop-and-create" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
